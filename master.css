@@ -1,0 +1,645 @@
+:root {
+    --main-color: rgb(142, 119, 84);
+    --dark-color: rgb(64, 61, 56);
+    --darkbrown-color: rgb(53, 51, 48);
+    --gray-color: #f8f8f8;
+}
+
+
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Alegreya', serif;
+    margin: 0;
+    background-color: white;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.mainbtn {
+    width: 134px;
+    height: 55px;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+}
+
+/* start navbar */
+.nav {
+    background-color: rgba(255, 255, 255, 0);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    transition: all 0.3s ease;
+    
+}
+
+nav img {
+    width: 170px;
+}
+
+nav ul {
+    font-size: 18px;
+    font-weight: 400;
+    padding-right: 15px;
+
+}
+
+nav ul li {
+    color: white !important;
+    padding-left: 20px;
+    
+
+}
+
+
+/* end navbar */
+/* start welcome */
+.welcome .image {
+    width: 100%;
+    position: relative;
+}
+
+.welcome .image img {
+    width: 100%;
+    height: 83vh;
+    object-fit: cover;
+}
+
+.welcomeoverlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.welcometext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 35%;
+    overflow-x: hidden;
+}
+
+.welcometext p {
+    color: white;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.welcometext #fs-24px {
+    font-size: 24px;
+    margin-bottom: 20px;
+    line-height: 44.64px;
+}
+
+.welcometext h1 {
+    font-weight: 400;
+    color: white;
+    font-size: 76px;
+    margin-bottom: 20px;
+}
+
+.welcometext div {
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.welcometext div button {
+    margin-left: 5px;
+
+}
+
+.welcometext div button:nth-child(1) {
+    background-color: var(--main-color);
+    border: 0px;
+}
+
+.welcometext div button:nth-child(2) {
+    background-color: transparent;
+    border: 2px solid white;
+}
+
+
+/* end welcome */
+/* start who we are */
+.whoarewe {
+    margin-top: 90px;
+    margin-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+}
+
+.whoarewe .image,
+.whoarewe .text {
+    width: 30%;
+}
+
+.whoarewe .text>* {
+    margin-bottom: 30px;
+}
+
+.whoarewe .image img {
+    width: 100%;
+}
+
+.whoarewe .text h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.whoarewe .text p,
+.whoarewe .text ul li {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: rgb(104, 104, 104);
+}
+
+.whoarewe .text p {
+    font-size: 17px;
+    line-height: 31.62px;
+}
+
+.whoarewe .text ul {
+    padding-left: 0;
+}
+
+.whoarewe .text ul li {
+    font-size: 17px;
+    margin-bottom: 30px;
+    list-style: none;
+
+}
+
+.whoarewe .text ul li i {
+    width: 44px;
+    height: 44px;
+    border-radius: 100%;
+    line-height: 44px;
+    font-size: 20px;
+    top: 6px;
+    color: var(--main-color);
+    border: 1px solid rgba(142, 119, 84, .20);
+
+}
+
+/* end who we are */
+/* start our location */
+.ourlocation {
+    background-color: var(--gray-color);
+    padding-top: 90px;
+    padding-bottom: 90px;
+}
+
+.ourlocation #container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.ourlocation .text {
+    width: 30%;
+    padding-right: 5px;
+    margin-right: 80px;
+}
+
+.ourlocation .text h2 {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+
+.ourlocation .text p {
+    color: rgb(104, 104, 104);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 17px;
+    line-height: 31.62px;
+    margin-bottom: 20px;
+
+}
+
+.ourlocation .image {
+    width: 30%;
+}
+
+.ourlocation .image img {
+    width: 100%;
+}
+
+/* end our location */
+/* start our baking */
+.ourbaking {
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+.ourbaking .ourbakingheader {
+    text-align: center;
+}
+
+.ourbaking .ourbakingheader p {
+    color: rgb(104, 104, 104);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 17px;
+    line-height: 31.62px;
+    margin-bottom: 60px;
+
+}
+
+.ourbaking .ourbakingheader h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.ourbakingcardscontainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    gap: 40px;
+
+}
+
+.ourbakingcardscontainer div {
+    width: 20%;
+}
+
+.ourbakingcardscontainer div img {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.ourbakingcardscontainer div h4 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 22px;
+    line-height: 31.62px;
+
+}
+
+.ourbakingcardscontainer div p {
+    color: rgb(104, 104, 104);
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 17px;
+    line-height: 31.62px;
+    margin-bottom: 20px;
+
+}
+
+/* end our baking */
+/* start Contact Information */
+
+.contactinfo {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-color);
+    gap: 80px;
+}
+
+.contactinfo .text {
+    width: 30%;
+}
+
+.contactinfo .text>* {
+    margin-bottom: 30px;
+}
+
+
+
+.contactinfo .text h2 {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.contactinfo .text p,
+.contactinfo .text ul li {
+    font-family: 'Alegreya Sans', sans-serif;
+    color: rgb(104, 104, 104);
+}
+
+.contactinfo .text p {
+    font-size: 17px;
+    line-height: 31.62px;
+}
+
+.contactinfo .text ul {
+    padding-left: 0;
+}
+
+.contactinfo .text ul li {
+    font-size: 17px;
+    margin-bottom: 30px;
+    list-style: none;
+
+}
+
+.contactinfo .text ul li i {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    line-height: 30px;
+    top: 6px;
+    color: white;
+    background-color: var(--main-color);
+
+}
+
+.map {
+    width: 30%;
+}
+
+.mapouter {
+    position: relative;
+    text-align: right;
+    height: 500px;
+    width: 100%;
+}
+
+.mapouter iframe {
+    height: 500px;
+    width: 100%;
+}
+
+.gmap_canvas {
+    overflow: hidden;
+    background: none !important;
+    height: 500px;
+    width: 100%;
+}
+
+/* end Contact Information */
+/* start footer */
+.footer {
+    background-color: var(--dark-color);
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.footer p,
+.footer ul li,
+.footer hr {
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding: 6px;
+    color: rgb(150, 150, 150);
+}
+
+.footer p {
+    line-height: 30px;
+}
+
+.footer hr {
+    margin: 6px;
+    padding: 0;
+}
+
+.footer i {
+    color: rgb(150, 150, 150);
+}
+
+.footer h4 {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* end footer */
+
+footer {
+    background-color: var(--darkbrown-color);
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+footer .image{
+    width: 170px;
+    margin-left: auto;
+    margin-right: auto;
+}
+footer .image img{
+    width: 100%;
+}
+
+footer p {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-family: 'Alegreya Sans', sans-serif;
+    padding: 6px;
+    color: rgb(110, 110, 110);
+}
+
+footer span {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #646464;
+    text-align: center;
+    margin-right: 8px;
+    margin-bottom: 8px;
+    background: var(--dark-color);
+    transition: color .3s, background-color .3s, border-color .3s;
+    overflow: hidden;
+    position: relative;
+}
+
+footer span:hover:nth-child(1) {
+    background-color: #3b5998;
+    color: white;
+}
+
+footer span:hover:nth-child(2) {
+    background-color: red;
+    color: white;
+}
+
+footer span:hover:nth-child(3) {
+    background-color: #0072b1;
+    color: white;
+}
+
+footer span:hover:nth-child(4) {
+    background-color: #1DA1F2;
+    color: white;
+}
+
+/* endfooter */
+
+
+/* start mediaquery */
+@media only screen and (max-width: 992px) {
+    /* .nav {
+        background-color: rgba(255, 255, 255, 1);
+        position: static;
+       
+    } */
+   
+    nav img {
+        width: 150px;
+    }
+    .welcometext h1 {
+        font-weight: 400;
+        color: white;
+        font-size: 34px;
+        margin-bottom: 20px;
+    }
+    .welcometext {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        width: 80%;
+    
+    }
+    .whoarewe {
+        margin-top: 90px;
+        margin-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .whoarewe .image,
+    .whoarewe .text {
+        width: 60%;
+    }
+
+    .ourlocation #container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .ourlocation .text,
+    .ourlocation .image {
+        width: 60%;
+        margin-right: 0px;
+
+    }
+
+    .ourbakingcardscontainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 100%;
+        gap: 40px;
+
+    }
+
+    .ourbakingcardscontainer div {
+        width: 60%;
+    }
+
+    .contactinfo {
+        padding-top: 90px;
+        padding-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--gray-color);
+        gap: 80px;
+    }
+    .contactinfo .text {
+        width: 60%;
+    }
+    .map {
+        width: 60%;
+    }
+    footer .image{
+        width: 150px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    nav img {
+        width: 120px;
+    }
+    
+.welcometext #fs-24px {
+    font-size: 16px;
+    margin-bottom: 20px;
+    line-height: 44.64px;
+}
+.welcometext {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+
+}
+
+
+    .whoarewe {
+        margin-top: 90px;
+        margin-bottom: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 80px;
+    }
+
+    .whoarewe .image,
+    .whoarewe .text {
+        width: 80%;
+
+    }
+
+    .ourlocation .text,
+    .ourlocation .image {
+        width: 80%;
+    }
+
+    .ourbakingcardscontainer div {
+        width: 80%;
+    }
+    .contactinfo .text {
+        width: 80%;
+    }
+    .map {
+        width: 80%;
+    }
+    footer .image{
+        width: 120px;
+    }
+}
+
+
+
+/* end mediaquery */
